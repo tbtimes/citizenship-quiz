@@ -1,0 +1,180 @@
+<html lang="en">
+<div class="citizenship-quiz-container">
+<h2>Can you answer the questions on the new Citizenship test?</h2>  <div id="quiz-container">    <!-- Q1 -->
+    <div class="question" id="question1">
+      <p>1. Which of the following documents influenced the U.S. Constitution?</p>
+      <button class="answer" onclick="checkAnswer(this,'A','q1')">A. The Magna Carta</button>
+      <button class="answer" onclick="checkAnswer(this,'B','q1')">B. Federalist Papers</button>
+      <button class="answer" onclick="checkAnswer(this,'C','q1')">C. Emancipation Proclamation</button>
+      <button class="answer" onclick="checkAnswer(this,'D','q1')">D. Treaty of Paris</button>
+      <p id="result1" class="result"></p>
+    </div>    <!-- Q2 -->
+    <div class="question" id="question2">
+      <p>2. What is the purpose of the 10th Amendment?</p>
+      <button class="answer" onclick="checkAnswer(this,'A','q2')">A. State rights</button>
+      <button class="answer" onclick="checkAnswer(this,'B','q2')">B. Freedom of speech</button>
+      <button class="answer" onclick="checkAnswer(this,'C','q2')">C. Speedy trial</button>
+      <button class="answer" onclick="checkAnswer(this,'D','q2')">D. Abolition of slavery</button>
+      <p id="result2" class="result"></p>
+    </div>    <!-- Q3 -->
+    <div class="question" id="question3">
+      <p>3. James Madison is famous for many things. Which one of the following is true?</p>
+      <button class="answer" onclick="checkAnswer(this,'A','q3')">A. 10th president of the U.S.</button>
+      <button class="answer" onclick="checkAnswer(this,'B','q3')">B. Father of the Constitution</button>
+      <button class="answer" onclick="checkAnswer(this,'C','q3')">C. Wrote the Declaration of Independence</button>
+      <button class="answer" onclick="checkAnswer(this,'D','q3')">D. President during World War II</button>
+      <p id="result3" class="result"></p>
+    </div>    <!-- Q4 -->
+    <div class="question" id="question4">
+      <p>4. When did all women get the right to vote?</p>
+      <button class="answer" onclick="checkAnswer(this,'A','q4')">A. 1935</button>
+      <button class="answer" onclick="checkAnswer(this,'B','q4')">B. After the Korean War</button>
+      <button class="answer" onclick="checkAnswer(this,'C','q4')">C. 1920</button>
+      <button class="answer" onclick="checkAnswer(this,'D','q4')">D. 1960</button>
+      <p id="result4" class="result"></p>
+    </div>    <!-- Q5 -->
+    <div class="question" id="question5">
+      <p>5. Which one of these people were leaders of the women's rights movement in the 1800s?</p>
+      <button class="answer" onclick="checkAnswer(this,'A','q5')">A. Kate Warne</button>
+      <button class="answer" onclick="checkAnswer(this,'B','q5')">B. Hetty Green</button>
+      <button class="answer" onclick="checkAnswer(this,'C','q5')">C. Harriet Tubman</button>
+      <button class="answer" onclick="checkAnswer(this,'D','q5')">D. Nellie Bly</button>
+      <p id="result5" class="result"></p>
+    </div>    <!-- Q6 -->
+    <div class="question" id="question6">
+      <p>6. Why did the United States enter World War I?</p>
+      <button class="answer" onclick="checkAnswer(this,'A','q6')">A. Archduke Franz Ferdinand was assassinated</button>
+      <button class="answer" onclick="checkAnswer(this,'B','q6')">B. Britain declared war on Germany</button>
+      <button class="answer" onclick="checkAnswer(this,'C','q6')">C. To create the League of Nations</button>
+      <button class="answer" onclick="checkAnswer(this,'D','q6')">D. Germany attacked U.S. (civilian) ships</button>
+      <p id="result6" class="result"></p>
+    </div>    <!-- Q7 -->
+    <div class="question" id="question7">
+      <p>7. Name one thing Dwight Eisenhower is famous for.</p>
+      <button class="answer" onclick="checkAnswer(this,'A','q7')">A. General during World War I</button>
+      <button class="answer" onclick="checkAnswer(this,'B','q7')">B. 20th President</button>
+      <button class="answer" onclick="checkAnswer(this,'C','q7')">C. General during World War II</button>
+      <button class="answer" onclick="checkAnswer(this,'D','q7')">D. President at the end of the Cold War</button>
+      <p id="result7" class="result"></p>
+    </div>    <!-- Q8 -->
+    <div class="question" id="question8">
+      <p>8. Why did the United States enter the Persian Gulf War?</p>
+      <button class="answer" onclick="checkAnswer(this,'A','q8')">A. To force the Iraqi military from Kuwait</button>
+      <button class="answer" onclick="checkAnswer(this,'B','q8')">B. To force the Iranian military away from Kuwait</button>
+      <button class="answer" onclick="checkAnswer(this,'C','q8')">C. Iraq had nuclear weapons</button>
+      <button class="answer" onclick="checkAnswer(this,'D','q8')">D. Iraq declared war against Syria</button>
+      <p id="result8" class="result"></p>
+    </div>    <!-- Q9 -->
+    <div class="question" id="question9">
+      <p>9. Which one of these is an example of an American innovation?</p>
+      <button class="answer" onclick="checkAnswer(this,'A','q9')">A. The compass</button>
+      <button class="answer" onclick="checkAnswer(this,'B','q9')">B. Satellite</button>
+      <button class="answer" onclick="checkAnswer(this,'C','q9')">C. Airplane</button>
+      <button class="answer" onclick="checkAnswer(this,'D','q9')">D. The radio</button>
+      <p id="result9" class="result"></p>
+    </div>    <!-- Q10 -->
+    <div class="question" id="question10">
+      <p>10. The Nation's first motto was "E Pluribus Unum." What does that mean?</p>
+      <button class="answer" onclick="checkAnswer(this,'A','q10')">A. Out of many, one</button>
+      <button class="answer" onclick="checkAnswer(this,'B','q10')">B. More than one</button>
+      <button class="answer" onclick="checkAnswer(this,'C','q10')">C. We are number one</button>
+      <button class="answer" onclick="checkAnswer(this,'D','q10')">D. We are all one</button>
+      <p id="result10" class="result"></p>
+    </div> <p id="finalBox"></p>  </div>
+</div>
+<style>
+  .citizenship-quiz-container {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  h1 {
+    margin: 20px 0;
+  }
+  .question {
+    margin-bottom: 28px;
+  }
+  .question p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .answer {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .answer:hover {
+    background: #F2F2F2;
+  }
+  .answer.correct {
+    background: #D4EDDA;
+    border-color: #28A745;
+  }
+  .answer.incorrect {
+    background: #F8D7DA;
+    border-color: #DC3545;
+  }
+  .result {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+</style>
+
+<script>
+let results = {"answered": [], "correct": []}
+let finalString = "";
+
+    // correct answers (key)
+    const answers = {
+      q1: "B",
+      q2: "A",
+      q3: "B",
+      q4: "C",
+      q5: "C",
+      q6: "D",
+      q7: "C",
+      q8: "A",
+      q9: "C",
+      q10: "A"
+    };    function checkAnswer(btn, choice, qKey)  {
+      // clear states for this question
+      const buttons = btn.parentNode.querySelectorAll(".answer");
+      buttons.forEach(b => b.classList.remove("correct","incorrect"));      const resultEl = document.getElementById("result" + qKey.substring(1));
+      if (choice === answers[qKey]) {
+        btn.classList.add("correct");
+        resultEl.textContent = "Correct.";
+        resultEl.style.color = "green";
+        results["correct"].push(qKey)
+      } else {
+        btn.classList.add("incorrect");
+        resultEl.textContent = "Incorrect. Correct answer: " + answers[qKey];
+        resultEl.style.color = "red";
+        // Remove wrong answer
+        wrongIdx = results["correct"].indexOf(qKey)
+        console.log(wrongIdx)
+        if(wrongIdx>=0) {
+          console.log("splice now")
+          results["correct"].splice(wrongIdx, 1)
+          console.log(results["correct"])
+        }
+      }
+        results["answered"].push(qKey);
+        finalCorrect= [... new Set(results["correct"])].length 
+        finalAnswered= [... new Set(results["answered"])].length 
+finalString = "You answered " + finalCorrect + " out of " + finalAnswered + " questions correctly (" + Math.round(100*(finalCorrect / finalAnswered), 0) + "%). Applicants must score 60% or higher to pass the citizenship exam."
+        console.log(finalString)
+      if(finalAnswered == 10) {
+        document.getElementById("finalBox").innerHTML = finalString
+      }
+      
+    }
+
+</script>
+</html>
